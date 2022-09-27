@@ -1,0 +1,13 @@
+.navbar-brand {
+  font-style: normal;
+  font-size: larger;
+  position: static;
+  text-align: center;
+  border: 8px solid white;
+
+  border-style: outset;
+
+  border-radius: 12px;
+  padding: 0px 18px;
+  color: rgb(235, 235, 104);
+}
