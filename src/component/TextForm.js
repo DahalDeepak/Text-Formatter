@@ -38,7 +38,7 @@ export default function TextForm(props) {
   return (
     <>
       <div className="container">
-        <h1>{props.heading}</h1>
+        <h1 className="mb-4">{props.heading}</h1>
         <div className="mb-3">
           {/* <label for="textbox" class="form-label"></label> */}
           <textarea
@@ -69,7 +69,15 @@ export default function TextForm(props) {
       <div className="container my-2">
         {/* my-2 is used for spacing */}
         <h2>Your text has </h2>
-        <p> {text.split(" ").length} words</p>
+        <p>
+          {" "}
+          {
+            text.split(/\s+/).filter((element) => {
+              return element.length !== 0;
+            }).length
+          }{" "}
+          words
+        </p>
         <p> {text.length} Character </p>
 
         <p>Takes {0.008 * text.split(" ").length} minutes to read</p>

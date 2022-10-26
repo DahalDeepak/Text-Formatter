@@ -21,11 +21,12 @@ function App() {
       <h1>
         <Navbar title="Text Formatter" />
       </h1>
+
       {/* <Navbar /> */}
       <strong>
         <Alert alert={alert} />
       </strong>
-      <div className="container my-2">
+      <div className="container my-3">
         <TextForm
           showAlert={showAlert}
           heading="Enter The Text To Operate On"
