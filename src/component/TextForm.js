@@ -56,10 +56,10 @@ export default function TextForm(props) {
           Convert To LowerCase
         </button>
         <button className="btn btn-primary mx-2" onClick={handClearClick}>
-          Clear text
+          Clear Text
         </button>
         <button className="btn btn-primary mx-2" onClick={handSingleSpaceClick}>
-          Clear double Space
+          Clear Double Space
         </button>
         <button className="btn btn-primary mx-2" onClick={handleCopy}>
           Copy Text
